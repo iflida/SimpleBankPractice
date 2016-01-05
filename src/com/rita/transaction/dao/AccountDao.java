@@ -33,7 +33,7 @@ public class AccountDao implements IAccountDao
 			BigDecimal deposit = new BigDecimal(i*1000);
 			account.setBalance(deposit);
 			ArrayList<History> historys = new ArrayList<History>();
-			History history = new History(new Date(), deposit, TransType.Deposit, "Init Setting", account);
+			History history = new History(new Date(), deposit, TransType.DEPOSIT, "Init Setting", account);
 			historys.add(history);
 			this.insert(account);
 			

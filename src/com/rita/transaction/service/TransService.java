@@ -46,7 +46,7 @@ public class TransService implements ITransService
 	{
 		
 		//Add one History record
-		History history = new History(new Date(), amount, TransType.Deposit, note, account);
+		History history = new History(new Date(), amount, TransType.DEPOSIT, note, account);
 		historyDao.insert(history);
 
 		//update Account
@@ -74,7 +74,7 @@ public class TransService implements ITransService
 			
 			
 			//Add one History record
-			History history = new History(new Date(), amount, TransType.Withdraw, note, account);
+			History history = new History(new Date(), amount, TransType.WITHDRAW, note, account);
 			historyDao.insert(history);
 		}
 		else //Insufficient account balance

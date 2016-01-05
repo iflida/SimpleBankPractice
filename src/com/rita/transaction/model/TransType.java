@@ -7,6 +7,6 @@ package com.rita.transaction.model;
  */
 public enum TransType
 {
-	Deposit,
-	Withdraw,
+	DEPOSIT,
+	WITHDRAW,
 }
